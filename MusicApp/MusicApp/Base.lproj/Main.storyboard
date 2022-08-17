@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kuh-Vd-SkR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller Login Page-->
+        <scene sceneID="nPZ-Ge-FVP">
+            <objects>
+                <viewController id="kuh-Vd-SkR" customClass="ViewController_LoginPage" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBl-Ws-i7y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbT-yl-hrl">
+                                <rect key="frame" x="177" y="505" width="60" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="→" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="29"/>
+                                    <color key="baseBackgroundColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enter:" destination="kuh-Vd-SkR" eventType="touchUpInside" id="VeH-0v-0MP"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="3KI-D5-yRp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hey! please enter your name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOA-Uq-3rW">
+                                <rect key="frame" x="39" y="354" width="336" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCd-d5-hNl">
+                                <rect key="frame" x="62" y="438" width="291" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WDm-WX-WpT"/>
+                        <color key="backgroundColor" red="0.98480623960494995" green="0.97684556245803833" blue="0.95382493734359741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameInput" destination="NCd-d5-hNl" id="f0r-MZ-oW2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tD-fR-xzq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736.23188405797111" y="66.964285714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFv-UZ-Xyr">
+                                <rect key="frame" x="38" y="327" width="339" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755577899139" green="0.33604931461530813" blue="0.58112516108247425" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="new entry" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="32"/>
+                                    <color key="baseBackgroundColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="newEntry:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YvQ-e0-mHW"/>
+                                    <segue destination="TF5-F4-sek" kind="presentation" modalPresentationStyle="fullScreen" id="rmN-eB-Dpr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fm-fd-mfv">
+                                <rect key="frame" x="38" y="500" width="339" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="your playlist" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="32"/>
+                                    <color key="baseBackgroundColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ww8-gD-dRg">
+                                <rect key="frame" x="38" y="413" width="339" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="monthly view" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="32"/>
+                                    <color key="baseBackgroundColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hey! name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeG-M7-WeA">
+                                <rect key="frame" x="96" y="263" width="223" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98480623960494995" green="0.97684556245803833" blue="0.95382493734359741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="greeting" destination="JeG-M7-WeA" id="ngU-08-JXK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="66.964285714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I4U-Ow-uvB">
+            <objects>
+                <viewController id="TF5-F4-sek" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ytz-bs-37V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="how are you feeling?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U9-lk-K6A">
+                                <rect key="frame" x="73" y="206" width="268" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IT-jO-RRc">
+                                <rect key="frame" x="38" y="275" width="339" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="happy" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="32"/>
+                                    <color key="baseBackgroundColor" red="0.90435606060606055" green="0.83893277128890265" blue="0.37161366416502684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3l-rZ-ZKi">
+                                <rect key="frame" x="38" y="448" width="339" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="angry" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="32"/>
+                                    <color key="baseBackgroundColor" red="0.69288589015151514" green="0.39454578212884722" blue="0.28992842511855432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ms-l2-lZK">
+                                <rect key="frame" x="38" y="361" width="339" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="sad" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="32"/>
+                                    <color key="baseBackgroundColor" red="0.48554691650591331" green="0.58369087622136928" blue="0.73729482323232332" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODe-iR-o52">
+                                <rect key="frame" x="38" y="536" width="339" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="tired" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="32"/>
+                                    <color key="baseBackgroundColor" red="0.43270404791173361" green="0.51363241792929293" blue="0.41049566960286599" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhV-6z-7OQ">
+                                <rect key="frame" x="38" y="622" width="339" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="anxious" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="32"/>
+                                    <color key="baseBackgroundColor" red="0.030730744823813438" green="0.039861999452114105" blue="0.052252553403377533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCa-Cr-blW">
+                                <rect key="frame" x="317" y="779" width="60" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="←" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="CodecPro-Regular" family="Codec Pro" pointSize="29"/>
+                                    <color key="baseBackgroundColor" red="0.25152755580000002" green="0.33604931459999998" blue="0.58112516110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enter:" destination="kuh-Vd-SkR" eventType="touchUpInside" id="Zw9-To-OPt"/>
+                                    <segue destination="kuh-Vd-SkR" kind="presentation" modalPresentationStyle="overFullScreen" id="ZuO-qF-AgJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k2g-Ef-TWm"/>
+                        <color key="backgroundColor" red="0.98480623960494995" green="0.97684556245803833" blue="0.95382493734359741" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHj-aM-G8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="776"/>
+        </scene>
+    </scenes>
+</document>
